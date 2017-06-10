@@ -25,12 +25,9 @@ public class Controller {
     @FXML
     void onMouseEnteredRestrictedArea(MouseEvent event) {
         Node source = (Node) event.getSource();
-        double sourceX = source.getLayoutX();
-        double sourceY = source.getLayoutY();
-        double mouseX = event.getX();
-        double mouseY = event.getY();
 
-        source.setTranslateX(sourceX - mouseX);
-        source.setTranslateY(sourceY - mouseY);
+        // far from perfect solution...
+        source.setTranslateX(source.getLayoutX() - event.getX());
+        source.setTranslateY(source.getLayoutY() - event.getY());
     }
 }
