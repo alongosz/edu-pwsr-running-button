@@ -6,12 +6,12 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 public class Controller {
 
     @FXML
-    private AnchorPane restrictedArea;
+    private Pane restrictedArea;
 
     @FXML
     private Button btnClose;
